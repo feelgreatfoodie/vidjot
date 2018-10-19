@@ -18,6 +18,8 @@
   "homepage": "https://github.com/feelgreatfoodie/vidjot#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "mongoose": "4.11.12",
+    "nodemon": "^1.18.4"
   }
 }
