@@ -10,10 +10,12 @@ mongoose.Promise = global.Promise
 mongoose.connect('mongodb://localhost/vidjot-dev', {
   useMongoClient: true
 })
-.then(() => {
-  console.log('MongoDB Connected...')
-})
-.catch(err => console.log(err))
+  .then(() => {console.log('MongoDB Connected...')})
+  .catch(err => console.log(err))
+
+//Load Idea Model
+require('./models/Idea')
+const Idea = mongoose.model('ideas')
 
 //Handlebars Middleware
 app.engine('handlebars', exphbs({
